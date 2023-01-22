@@ -11,7 +11,7 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
 
-  <remote  name="yuki"
+  <remote  name="shirayuki"
            fetch="https://github.com/shirayuki-prjkt"
            revision="refs/heads/tsushima-13" />
 
