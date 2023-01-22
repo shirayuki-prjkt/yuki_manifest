@@ -2,7 +2,7 @@
 <manifest>
 
   <!-- General -->
-  <project path="build/make" name="platform_build" remote="yuki" >
+  <project path="build/make" name="platform_build" remote="shirayuki" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -76,7 +76,7 @@
   <project path="system/vold" name="platform_system_vold" remote="shirayuki" />
 
   <!-- Vendor -->
-  <project path="vendor/yuki/gapps" name="platform_vendor_yuki_gapps" remote="raka" />
+  <project path="vendor/yuki/gapps" name="platform_vendor_yuki_gapps" remote="yuki" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="shirayuki" />
   <project path="vendor/shirayuki" name="platform_vendor_shirayuki" remote="shirayuki" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="shirayuki" />
