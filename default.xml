@@ -15,7 +15,7 @@
            fetch="https://github.com/shirayuki-prjkt"
            revision="refs/heads/tsushima-13" />
 
-  <remote  name="raka"
+  <remote  name="yuki"
            fetch="https://gitlab.com/ItzKaguya"
            revision="refs/heads/tsushima-13" />
 
