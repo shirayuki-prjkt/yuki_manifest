@@ -23,7 +23,7 @@
   <!-- External -->
   <project path="external/arm-optimized-routines" name="platform_external_arm-optimized-routines" remote="shirayuki" />
   <project path="external/colorkt" name="platform_external_colorkt" remote="shirayuki" />
-  <project path="external/faceunlock" name="platform_external_faceunlock" remote="shirayuki" revision="12.1"/>
+  <project path="external/faceunlock" name="platform_external_faceunlock" remote="shirayuki" />
   <project path="external/json-c" name="platform_external_json-c" remote="shirayuki" />
   <project path="external/jemalloc_new" name="platform_external_jemalloc_new" remote="shirayuki" />
   <project path="external/libjpeg-turbo" name="platform_external_libjpeg-turbo" remote="shirayuki" />
