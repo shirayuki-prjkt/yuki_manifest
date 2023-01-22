@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- General -->
+  <project path="build/make" name="platform_build" remote="yuki" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" remote="shirayuki" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="art" name="platform_art" remote="shirayuki" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="shirayuki" />
+  <project path="bionic" name="platform_bionic" remote="shirayuki" />
+
+  <!-- External -->
+  <project path="external/arm-optimized-routines" name="platform_external_arm-optimized-routines" remote="shirayuki" />
+  <project path="external/colorkt" name="platform_external_colorkt" remote="shirayuki" />
+  <project path="external/faceunlock" name="platform_external_faceunlock" remote="shirayuki" revision="12.1"/>
+  <project path="external/json-c" name="platform_external_json-c" remote="shirayuki" />
+  <project path="external/jemalloc_new" name="platform_external_jemalloc_new" remote="shirayuki" />
+  <project path="external/libjpeg-turbo" name="platform_external_libjpeg-turbo" remote="shirayuki" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="shirayuki" />
+  <project path="external/themelib" name="platform_external_themelib" remote="shirayuki" />
+  <project path="external/tinycompress" name="platform_external_tinycompress" remote="shirayuki" />
+  <project path="external/zlib-ng" name="platform_external_zlib-ng" remote="shirayuki" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="platform_frameworks_base" remote="shirayuki"/>
+  <project path="frameworks/av" name="platform_frameworks_av" remote="shirayuki" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="shirayuki" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="shirayuki" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="shirayuki" />
+
+  <!-- Hardware -->
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="shirayuki" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="shirayuki" />
+  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="shirayuki" revision="13.0-caf" />
+
+  <!-- Packages -->
+  <project path="packages/apps/FaceUnlockService" name="platform_packages_apps_FaceUnlockService" remote="shirayuki" />
+  <project path="packages/apps/GameSpace" name="platform_packages_apps_GameSpace" remote="shirayuki" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="shirayuki" />
+  <project path="packages/apps/Matlog" name="platform_packages_apps_Matlog" remote="shirayuki" />
+  <project path="packages/apps/Nfc" name="platform_packages_apps_Nfc" remote="shirayuki" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="shirayuki" />
+  <project path="packages/apps/SimpleDeviceConfig" name="platform_packages_apps_SimpleDeviceConfig" remote="shirayuki" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="shirayuki" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="shirayuki" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="shirayuki" />
+  <project path="packages/apps/ParallelSpace" name="platform_packages_apps_ParallelSpace" remote="shirayuki" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="shirayuki" />
+  <project path="packages/apps/ShirayukiWalls" name="platform_packages_apps_ShirayukiWalls" remote="shirayuki" />
+  <project path="packages/apps/ShirayukiDashboard" name="platform_packages_apps_ShirayukiDashboard" remote="shirayuki" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="shirayuki" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/tools-lineage" name="platform_prebuilts_tools-lineage" remote="shirayuki" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="shirayuki" revision="11.0" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="shirayuki" revision="11.0" />
+
+  <!-- System -->
+  <project path="system/core" name="platform_system_core" remote="shirayuki" />
+  <project path="system/security" name="platform_system_security" remote="shirayuki" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="shirayuki" />
+  <project path="system/media" name="platform_system_media" remote="shirayuki" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="shirayuki" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="shirayuki" />
+  <project path="system/vold" name="platform_system_vold" remote="shirayuki" />
+
+  <!-- Vendor -->
+  <project path="vendor/yuki/gapps" name="platform_vendor_yuki_gapps" remote="raka" />
+  <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="shirayuki" />
+  <project path="vendor/shirayuki" name="platform_vendor_shirayuki" remote="shirayuki" />
+  <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="platform_vendor_qcom_opensource_display-commonsys-intf" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/display" name="platform_vendor_qcom_opensource_display-commonsys" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform_vendor_qcom_opensource_interfaces" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/dataservices" name="platform_vendor_qcom_opensource_dataservices" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/usb" name="platform_vendor_qcom_opensource_usb" remote="shirayuki" />
+  <project path="vendor/interfaces" name="platform_vendor_interfaces" remote="shirayuki" />
+  <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="shirayuki" />
+
+  <!-- SEPolicy -->
+  <project path="device/shirayuki/sepolicy" name="platform_device_shirayuki_sepolicy" remote="shirayuki" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="shirayuki" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="shirayuki" />
+  <project path="device/qcom/sepolicy_vndr-legacy-um" name="platform_device_qcom_sepolicy_vndr" remote="shirayuki" revision="tsushima-legacy-um" />
+
+</manifest>
