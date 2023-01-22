@@ -12,8 +12,7 @@
            fetch="https://gitlab.com/" />
 
   <remote  name="shirayuki"
-           fetch="https://github.com/shirayuki-prjkt"
-           revision="refs/heads/tsushima-13" />
+           fetch="https://github.com/shirayuki-prjkt" />
 
   <remote  name="yuki"
            fetch="https://gitlab.com/ItzKaguya"
