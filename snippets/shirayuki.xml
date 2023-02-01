@@ -88,6 +88,9 @@
   <project path="vendor/interfaces" name="platform_vendor_interfaces" remote="shirayuki" />
   <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" remote="shirayuki" />
 
+  <!-- Shirayuki Devices -->
+  <project path="maintainer" name="yuki_maintainer" remote="shirayuki-devices" />
+
   <!-- SEPolicy -->
   <project path="device/shirayuki/sepolicy" name="platform_device_shirayuki_sepolicy" remote="shirayuki" />
   <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="shirayuki" />
