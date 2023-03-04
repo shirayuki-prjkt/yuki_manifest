@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/"
+           fetch=".."
            review="https://android-review.googlesource.com/" />
-
-  <remote  name="github"
-           fetch="https://github.com/" />
-
-  <remote  name="gitlab"
-           fetch="https://gitlab.com/" />
-
-  <remote  name="shirayuki"
-           fetch="https://github.com/shirayuki-prjkt"
-           revision="refs/heads/tsushima-13" />
-  
-  <remote  name="yuki"
-           fetch="https://gitlab.com/ItzKaguya"
-           revision="refs/heads/tsushima-13" />
-
-
   <default revision="refs/tags/android-13.0.0_r23"
-           remote="aosp" />
-
+           remote="aosp"
+           sync-j="4" />
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r23"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
@@ -1198,8 +1181,8 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
-
-  <!-- Remove unused AOSP repos -->
+  
+    <!-- Remove unused AOSP repos -->
   <include name="snippets/remove.xml" />
 
   <!-- Add all tracked shirayuki repos -->
@@ -1207,5 +1190,5 @@
 
   <!-- Add all tracked LineageOS repos -->
   <include name="snippets/los.xml" />
-
+  
 </manifest>
