@@ -10,6 +10,12 @@ command like this:
 ```bash
 repo init -u https://github.com/shirayuki-prjkt/yuki_manifest.git -b tsushima-13
 ```
+
+Or, use --depth=1 flags if you wanna save space and bandwidth
+
+```bash
+repo init -u https://github.com/shirayuki-prjkt/yuki_manifest.git -b tsushima-13 --depth=1
+```
   
 Then to sync up:
 ----------------
