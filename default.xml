@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
   <remote  name="aosp"
            fetch=".."
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-13.0.0_r23"
            remote="aosp"
            sync-j="4" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="shirayuki"
+           fetch="https://github.com/shirayuki-prjkt"
+           revision="refs/heads/tsushima-13" />
+  
+  <remote  name="yuki"
+           fetch="https://gitlab.com/ItzKaguya"
+           revision="refs/heads/tsushima-13" />
+
   <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r23"/>
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
