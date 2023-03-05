@@ -24,7 +24,11 @@
 
   <remote  name="shrxhere"
            fetch="https://github.com/shrxhere"
-           revision="refs/heads/main"
+           revision="refs/heads/main" />
+
+  <remote  name="hiro"
+           fetch="https://github.com/Hirozuto"
+           revision="refs/heads/android13-release" />
 
   <!-- General -->
   <project path="build/make" name="platform_build" remote="shirayuki" >
@@ -67,7 +71,8 @@
   <!-- Hardware -->
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="shirayuki" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="shirayuki" />
-  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="shirayuki" />
+  <project path="hardware/qcom-caf/wlan" name="platform_hardware_qcom_wlan" remote="hiro" />
+  <project path="hardware/qcom/wlan" name="platform_hardware_qcom_wlan" remote="hiro" />
 
   <!-- Packages -->
   <project path="packages/apps/FaceUnlockService" name="platform_packages_apps_FaceUnlockService" remote="shirayuki" />
